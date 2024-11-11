@@ -1,0 +1,105 @@
+/* CARRUSEL */
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    height: 45rem;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.carousel-caption .btn {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Iconos personalizados para los controles del carrusel */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.boton-carr{
+    width: 15rem;
+    height: 4rem;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem; 
+    }
+    .carousel-item {
+        height: 30rem;
+    }
+    .boton-carr{
+        width: 10rem;
+        height: 4rem;
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    .boton-carr{
+        width: 9rem;
+        height: 4rem;
+    }
+}
+
+/* CARRUSEL */
+
+/* DONACION */
+.img-don{
+    width: 25rem;
+    height: 25rem;
+}
+/* DONACION */
+
+
