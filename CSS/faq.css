@@ -1,0 +1,39 @@
+html, body {
+    height: 100%; /* Permite que el contenido ocupe toda la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Hace que el contenido crezca para llenar el espacio */
+}
+
+body{
+    background-color: #fafafa;
+}
+.accordion-item {
+    border: 1px solid #302f2f; /* Borde más oscuro */
+}
+
+.accordion-button {
+    color: #333; /* Color del texto */
+    border: none; /* Sin borde adicional */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff; /* Fondo más oscuro cuando está expandido */
+    color: #000; /* Texto más oscuro */
+}
+
+.accordion-body {
+    background-color: #b7f3a8cb; /* Fondo blanco */
+    color: #000000; /* Color del texto */
+    padding: 15px; /* Espaciado interno para la respuesta */
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.accordion-button{
+    font-size: 1.5rem;
+}

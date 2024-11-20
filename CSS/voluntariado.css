@@ -1,0 +1,28 @@
+/* Aseguramos que el body ocupe toda la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url(../IMG/VOLUNTARIADO/importancia-trabajo-en-equipo-edit.jpg);
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija cuando se hace scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Ajusta el padding según sea necesario */
+}
+
+footer {
+    background-color: #449f48;
+    border-top: 1px solid gray;
+}

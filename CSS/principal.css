@@ -106,7 +106,7 @@
 /* Fondo general de la sección */
 .news-section {
     padding: 2rem 0;
-    background-color:  #cde4be; /* Color de fondo de toda la sección */
+    background-color:  #a3d194; /* Color de fondo de toda la sección */
     width: 100%;
 }
 /* Estilo de la tarjeta de noticias */
@@ -177,7 +177,7 @@
 }
 
 .testimonios{
-    height: 25rem;
+    height: 24rem;
 }
 
 .cont-testimonio {
@@ -204,7 +204,7 @@
     }
 
     .testimonios{
-        height: 32rem;
+        height: 26rem;
     }
 
     .cont-testimonio{

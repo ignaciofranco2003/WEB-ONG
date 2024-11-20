@@ -8,62 +8,142 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Incluir SweetAlert -->
+    <!-- Incluye el SDK de EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/voluntariado.css">
     <link rel="icon" type="image/x-icon" href="IMG/LOGO-4.png">
-    <title>PARTICIPAR ONG</title>
+    <title>VOLUNTARIADO ONG</title>
+
 </head>
 <body>
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(201, 201, 201);">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#449f48;">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <!-- <img src="IMG/LOGO-3.png" alt="Logo" width="70" height="70" class="d-inline-block"> -->
             <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
-            <span class="ms-2" style="font-size: 1.5rem; font-weight: 500;">INICIO</span>
+            <span class="ms-2 " style="font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 500; color:#f2f2f2;">ALIANZA NATURAL</span>
         </a>
-        <!-- Botón de colapso para pantallas pequeñas -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Menú de navegación que se colapsa -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto lista-nav">  <!-- ms-auto para alinear a la derecha -->
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="donar.html">Donar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="proyectos.html">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="participar.html" style="border-bottom: 5px solid;">Participar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-2" aria-current="page" href="faq.html">Preguntas frecuentes</a>
-                </li>
+            <ul class="navbar-nav ms-auto lista-nav">
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2;" href="donar.html">Donar</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2;" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2;" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2; border-bottom: 5px solid;" href="participar.html">Voluntariado</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-2" style="color: #f2f2f2;" href="faq.html">Preguntas frecuentes</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- NAVBAR -->
 
-<div class="wip text-center" style="margin-top: 15rem;">
-    <h1 class="display-4 mb-4 lead text-muted" style="color: black; font-weight: 600;">
-        <i class="bi bi-tools" style="font-size: 3rem; "></i>
-        SITIO EN CONSTRUCCIÓN
-        <i class="bi bi-hammer" style="font-size: 3rem;"></i>
-    </h1>
-    <div class="mb-3">
-        <i class="bi bi-cone-striped" style="font-size: 4rem; color: #ff9800cc;"></i>
+<!-- CONTENIDO PRINCIPAL -->
+<div class="main-content container-fluid mb-5 mt-4">
+    <div class="row align-items-center">
+        <!-- Sección izquierda -->
+        <div class="col-md-6 text-center" style="color: white;">
+            <h3 class="mb-4 d-none d-md-block ms-5" style="font-size: 2.5rem;">UNIRSE AL EQUIPO</h3>
+            <h3 class="mb-4 d-block d-md-none" style="font-size: 1.9rem;">UNIRSE AL EQUIPO</h3>
+            <p class="container d-block d-md-none mb-4" style="text-align: justify; font-weight: 600; font-size: 1.1rem;">
+                Unirse a nuestro equipo es ser parte de una comunidad que promueve la protección del medio ambiente y el desarrollo sostenible. 
+                Como voluntario, podrás aprender nuevas habilidades, colaborar en proyectos impactantes y conectar con personas que comparten tus valores. 
+                Tu participación será clave para fortalecer iniciativas de reforestación, educación ambiental y reciclaje, ¡cada acción cuenta!
+            </p>
+            <p class="container d-none d-md-block ms-5" style="text-align: justify; font-weight: 600; font-size: 1.2rem;">
+                Unirse a nuestro equipo es ser parte de una comunidad que promueve la protección del medio ambiente y el desarrollo sostenible. 
+                Como voluntario, podrás aprender nuevas habilidades, colaborar en proyectos impactantes y conectar con personas que comparten tus valores. 
+                Tu participación será clave para fortalecer iniciativas de reforestación, educación ambiental y reciclaje, ¡cada acción cuenta!
+            </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <form id="contactForm" style="background-color: rgb(197, 197, 197); padding: 1.5rem; border-radius: 5px;">
+                <h5 class="text-center">Completa el siguiente formulario y nos pondremos en contacto para continuar con el proceso</h5>                    
+                <div class="mb-3">
+                    <label for="nombreApellido" class="form-label" style="color: black;">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombreApellido" placeholder="Ejemplo: Juan Pérez" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dni" class="form-label" style="color: black;">DNI</label>
+                    <input type="text" class="form-control" id="dni" placeholder="Ejemplo: 12345678" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: black;">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ejemplo: correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label" style="color: black;">Número de Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ejemplo: +54 9 11 1234-5678" required>
+                </div>
+                <button type="submit" class="btn btn-success mt-2 col-12">Enviar</button>
+            </form>
+        </div>
     </div>
-    <p class="lead text-muted" style="font-weight: 700; font-size: larger;">Estamos trabajando para mejorar la experiencia.</p>
 </div>
 
+<!-- Footer -->
+<footer class="text-center" style="border-top: 1px solid gray; background-color: #449f48;">
+    <div class="container p-2 mt-2">
+        <!-- Section: Social media -->
+        <section>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border: transparent;" href="https://www.facebook.com/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;  border: transparent;" href="https://x.com/" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;  border: transparent;" href="https://www.instagram.com/" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pb-2">
+        © 2024 Copyright:
+        <a class="text-dark" style="text-decoration: none;">IHC</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </body>
 </html>
 
-<style>
+<script type="text/javascript">
+    // Inicializar EmailJS con ID de usuario
+    (function() {
+        emailjs.init("Ndld_455QHfdYKX62");
+    })();
 
-</style>
+    // Función para manejar el envío del correo
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Evitar el envío por defecto del formulario
+
+        // Obtener los datos del formulario
+        const email = document.getElementById("email").value;
+        
+        // Enviar el correo mediante EmailJS
+        emailjs.send("service_gmail_ong", "template_gnkry8g", {
+            to_email: email,
+            subject: "",
+            message: ""
+        })
+        .then(function(response) {
+            Swal.fire({
+                title: '¡Éxito!',
+                text: 'Revisa tu casilla de correo para continuar con el proceso de inscripción.',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        }, function(error) {
+            Swal.fire({
+                title: '¡Error!',
+                text: 'En estos momentos no es posible anotarse al voluntariado, intente más tarde.',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            });
+            console.error(error);
+        });
+    });
+</script>

@@ -1,0 +1,65 @@
+/* Aseguramos que el body ocupe toda la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Ajusta el padding según sea necesario */
+}
+
+
+body {
+    background-image: url(../IMG/DONACIONES/restoring-degraded-forests_1_por\ Reca\ Ence\ AR\ en\ Shutterstock.png);
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija cuando se hace scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+footer {
+    background-color: #449f48;
+    border-top: 1px solid gray;
+}
+
+
+/* SWALL TRANSFERENCIA */
+.custom-swal-popup {
+    background-color: #b8b8b8;
+    color: #333;
+    border-radius: 10px;
+}
+
+.custom-swal-popup-donacion{
+    background-color: #a1a1a1;
+    color: #333;
+    border-radius: 10px;
+}
+
+.custom-swal-title {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.custom-swal-html {
+    font-size: 1.1rem;
+}
+
+.transferencia-info {
+    margin-top: 10px;
+
+}
+
+.transferencia-info p {
+    margin: 5px 0;
+}
+
+/* SWALL TRANSFERENCIA */

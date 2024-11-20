@@ -8,64 +8,222 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Incluir SweetAlert -->
+    <!-- Incluye el SDK de EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/donar.css">
     <link rel="icon" type="image/x-icon" href="IMG/LOGO-4.png">
     <title>DONACIONES ONG</title>
 </head>
 <body>
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(201, 201, 201);">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#449f48;">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <!-- <img src="IMG/LOGO-3.png" alt="Logo" width="70" height="70" class="d-inline-block"> -->
             <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
-            <span class="ms-2" style="font-size: 1.5rem; font-weight: 500;">INICIO</span>
+            <span class="ms-2 " style="font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 500; color:#f2f2f2;">ALIANZA NATURAL</span>
         </a>
-        <!-- Botón de colapso para pantallas pequeñas -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Menú de navegación que se colapsa -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto lista-nav">  <!-- ms-auto para alinear a la derecha -->
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4 actividad" aria-current="page" href="donar.html" style="border-bottom: 5px solid;">Donar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="proyectos.html">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="participar.html">Participar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-link me-2" aria-current="page" href="faq.html">Preguntas frecuentes</a>
-                </li>
+            <ul class="navbar-nav ms-auto lista-nav">
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2; border-bottom: 5px solid;" href="donar.html">Donar</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2;" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2;" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-4" style="color: #f2f2f2;" href="participar.html">Voluntariado</a></li>
+                <li class="nav-item"><a class="nav-link custom-link me-2" style="color: #f2f2f2;" href="faq.html">Preguntas frecuentes</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- NAVBAR -->
 
-
-<div class="wip text-center" style="margin-top: 15rem;">
-    <h1 class="display-4 mb-4 lead text-muted" style="color: black; font-weight: 600;">
-        <i class="bi bi-tools" style="font-size: 3rem; "></i>
-        SITIO EN CONSTRUCCIÓN
-        <i class="bi bi-hammer" style="font-size: 3rem;"></i>
-    </h1>
-    <div class="mb-3">
-        <i class="bi bi-cone-striped" style="font-size: 4rem; color: #ff9800cc;"></i>
+<!-- CONTENIDO PRINCIPAL -->
+<div class="main-content container-fluid mb-5 mt-4">
+    <div class="row align-items-center">
+        <!-- Sección izquierda -->
+        <div class="col-md-6 text-center" style="color: white;">
+            <h3 class="mb-4 d-none d-md-block ms-5" style="font-size: 2.5rem;">CON TU DONACIÓN</h3>
+            <h3 class="mb-4 d-block d-md-none" style="font-size: 1.9rem;">CON TU DONACIÓN</h3>
+            <p class="container d-block d-md-none mb-4" style="text-align: justify; font-weight: 600; font-size: 1.1rem;">
+                Con tu donación, estás contribuyendo directamente a la protección del medio ambiente y al desarrollo sostenible. 
+                Tu apoyo nos permite llevar adelante proyectos de reforestación, educación ambiental y reciclaje, impactando positivamente 
+                en comunidades y ecosistemas. Cada aporte, sin importar su tamaño, hace una gran diferencia para lograr un futuro más verde y sostenible.
+            </p>
+            <p class="container d-none d-md-block ms-5" style="text-align: justify; font-weight: 600; font-size: 1.2rem;">
+                Con tu donación, estás contribuyendo directamente a la protección del medio ambiente y al desarrollo sostenible. 
+                Tu apoyo nos permite llevar adelante proyectos de reforestación, educación ambiental y reciclaje, impactando positivamente 
+                en comunidades y ecosistemas. Cada aporte, sin importar su tamaño, hace una gran diferencia para lograr un futuro más verde y sostenible.
+            </p>
+            
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <form id="contactForm" style="background-color: rgb(197, 197, 197); padding: 1.5rem; border-radius: 5px;">
+                <h5 class="text-center">Completa el siguiente formulario para una donacion bancaria</h5>                    
+                <div class="mb-3">
+                    <label for="nombreApellido" class="form-label" style="color: black;">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombreApellido" placeholder="Ejemplo: Juan Pérez" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dni" class="form-label" style="color: black;">DNI</label>
+                    <input type="text" class="form-control" id="dni" placeholder="Ejemplo: 12345678" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: black;">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ejemplo: correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tipoDonacion" class="form-label" style="color: black;">Tipo de donacion</label>
+                    <select class="form-control" id="tipoDonacion" required style="appearance: none; background: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 10 6\'%3E%3Cpath d=\'M0 0l5 6 5-6H0z\' fill=\'%23000000\'/%3E%3C/svg%3E') no-repeat right 10px center; background-size: 10px; background-color: white;">
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="unica">Única</option>
+                        <option value="mensual">Mensual</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success mt-2 col-12">Enviar</button>
+            </form>
+        </div>
     </div>
-    <p class="lead text-muted" style="font-weight: 700; font-size: larger;">Estamos trabajando para mejorar la experiencia.</p>
 </div>
 
+<div class="mb-4 pb-2 justify-content-center" style="background-color: #dcdfcd79;"> 
+    <div class="container text-center pt-4">
+        <h2 style="color: black; font-weight: 600;">CONOCE OTRAS FORMAS DE DONAR</h2>
+    </div>
+    <div class="container w-50 justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 my-4 d-flex justify-content-center">
+                <button onclick="popupmp()" class="boton mercadopago" style="background-color: transparent; border: none;">
+                    <img src="IMG/DONACIONES/mercadopago.png" style="height: 9rem; background-color: transparent;" class="card-img-top" alt="MERCADO PAGO">
+                    <p class="mt-3" style="font-weight: 600;"> MERCADO PAGO</p>
+                </button>
+            </div>
+            <div class="col-md-5 my-4 d-flex justify-content-center">
+                <button onclick="popuptransferencia()" class="boton transferencia" style="background-color: transparent; border: none;">
+                    <img src="IMG/DONACIONES/transferencia.png" style="height: 9rem;" class="card-img-top" alt="TRANSFERENCIA">
+                    <p class="mt-3" style="font-weight: 600;"> TRANSFERENCIA </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Footer -->
+<footer class="text-center" style="border-top: 1px solid gray; background-color: #449f48;">
+    <div class="container p-2 mt-2">
+        <!-- Section: Social media -->
+        <section>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border: transparent;" href="https://www.facebook.com/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;  border: transparent;" href="https://x.com/" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;  border: transparent;" href="https://www.instagram.com/" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pb-2">
+        © 2024 Copyright:
+        <a class="text-dark" style="text-decoration: none;">IHC</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </body>
 </html>
 
-<style>
+<script>
 
-</style>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Evitar el envío por defecto del formulario
+        Swal.fire({
+            html: `
+                <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+                    <div>
+                        <label for="numTarjeta" style="display: block; font-weight: bold;">Número de tarjeta:</label>
+                        <input type="text" id="numTarjeta" maxLength="16" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" placeholder="Ingrese el número de tarjeta">
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <div style="flex: 1;">
+                            <label for="vencimiento" style="display: block; font-weight: bold;">Vencimiento:</label>
+                            <input type="text" id="vencimiento" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" placeholder="MM/AA">
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="codigo" style="display: block; font-weight: bold;">Código:</label>
+                            <input type="number" maxlength="3" id="codigo" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" placeholder="CVC">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="monto" style="display: block; font-weight: bold;">Monto:</label>
+                        <input type="number" id="monto" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" placeholder="Ingrese el monto">
+                    </div>
+                </div>
+            `,
+            confirmButtonText: 'REALIZAR DONACIÓN',
+            focusConfirm: false, // Evita que el botón obtenga el foco por defecto
+            customClass: {
+                popup: 'custom-swal-popup-donacion',
+                htmlContainer: 'custom-swal-html',
+            },
+            preConfirm: () => {
+                const tarjeta = document.getElementById("numTarjeta").value;
+                const vencimiento = document.getElementById("vencimiento").value;
+                const codigo = document.getElementById("codigo").value;
+                const monto = document.getElementById("monto").value;
+
+                if (!tarjeta || !vencimiento || !codigo || !monto) {
+                    Swal.showValidationMessage('Todos los campos son obligatorios.');
+                    return false;
+                }
+                return { tarjeta, vencimiento, codigo, monto };
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Obtener los datos del formulario
+                const email = document.getElementById("email").value;
+                (function() {
+                    emailjs.init("Ndld_455QHfdYKX62");
+                })();
+                // Enviar el correo mediante EmailJS
+                emailjs.send("service_gmail_ong", "template_tzyzp89", {
+                    to_email: email,
+                    subject: "",
+                    message: ""
+                })
+                Swal.fire('¡Gracias por tu donación!', '', 'success');
+                // Limpiar el formulario
+                document.getElementById("contactForm").reset();
+            }
+        });
+    });
+
+    function popupmp() { 
+        window.open("https://www.mercadopago.com.ar/", "_blank");
+    }
+
+    function popuptransferencia() {
+        Swal.fire({
+            title: 'Detalles de Transferencia',
+            html: `
+                <div class="transferencia-info">
+                    <p><strong>Nombre del Banco:</strong> Banco Nación</p>
+                    <p><strong>CUIT:</strong> 20-12345678-9</p>
+                    <p><strong>Alias:</strong> donacion.alianza</p>
+                    <p><strong>CBU:</strong> 1234567890123456789012</p>
+                </div>
+            `,
+            confirmButtonText: 'Cerrar',
+            customClass: {
+                popup: 'custom-swal-popup',
+                title: 'custom-swal-title',
+                htmlContainer: 'custom-swal-html',
+            }
+        });
+    }
+
+</script>
+
