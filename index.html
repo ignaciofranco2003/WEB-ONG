@@ -14,14 +14,16 @@
     <link rel="icon" type="image/x-icon" href="IMG/LOGO-4.png">
     <title>INICIO ONG</title>
 </head>
+
 <body>
 <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#449f48;">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <!-- <img src="IMG/LOGO-3.png" alt="Logo" width="70" height="70" class="d-inline-block"> -->
                 <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
-                <span class="ms-2 " style="font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 500; color:#f2f2f2;">ALIANZA NATURAL</span>
+                <div class="logo-container ms-2">
+                    <span class="logo-text nav-link">Alianza Natural</span>
+                </div>
             </a>
             <!-- Botón de colapso para pantallas pequeñas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,15 +65,13 @@
             <div class="carousel-item active">
                 <img src="IMG/CARRUSEL/SLIDE-NOSOTROS.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption w-75">
-                    <h2>¿Quiénes somos?</h2>
+                    <h2 style="text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">¿Quiénes somos?</h2>
                     <!-- Texto para pantallas grandes -->
-                    <p class="d-none d-md-block" style="margin-top: 6rem; font-size: 1.4rem; font-weight: 500; color: rgb(255, 255, 255);">
-                        Somos una ONG comprometida con la conservación ambiental y el bienestar comunitario. Creemos en el poder de la transparencia y la inclusión, trabajando juntos para crear un impacto positivo en el medio ambiente y en nuestras comunidades. Únete a nosotros y forma parte de esta misión; juntos podemos hacer una diferencia significativa. ¡Hace clic en el botón y únite a nuestro equipo!
-                    </p>
+                    <p class="d-none d-md-block" style="margin-top: 6rem; font-size: 1.4rem; font-weight: 500; color: rgb(255, 255, 255); text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">
+                        Somos una ONG comprometida con la conservación ambiental y el bienestar comunitario. Creemos en el poder de la transparencia y la inclusión, trabajando juntos para crear un impacto positivo en el medio ambiente y en nuestras comunidades. Únete a nosotros y forma parte de esta misión; juntos podemos hacer una diferencia significativa. ¡Haz clic en el botón y únete a nuestro equipo!                    </p>
                     <!-- Texto reducido para pantallas pequeñas -->
-                    <p class="d-block d-md-none mt-4" style="font-size: 1rem; font-weight: 500; color: rgb(255, 255, 255);">
-                        Somos una ONG comprometida con la conservación ambiental y el bienestar comunitario. Únite y forma parte de esta misión; ¡hace clic en el botón y únite a nuestro equipo!
-                    </p>
+                    <p class="d-block d-md-none mt-4" style="font-size: 1rem; font-weight: 500; color: rgb(255, 255, 255); text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">
+                        Somos una ONG comprometida con la conservación ambiental y el bienestar comunitario. Únete y forma parte de esta misión; ¡haz clic en el botón y únete a nuestro equipo!                    </p>
                     <button onclick="participar()" class="btn btn-primary boton-carr py-1 mt-5" style="font-size: 1.1rem; font-weight: 500;">UNIRSE</button>
                 </div>
             </div>
@@ -79,13 +79,13 @@
             <div class="carousel-item">
                 <img src="IMG/CARRUSEL/SLIDE-PROYECTOS.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption w-75">
-                    <h2>Nuestros Proyectos</h2>
+                    <h2 style="text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">Nuestros Proyectos</h2>
                     <!-- Texto para pantallas grandes -->
-                    <p class="d-none d-md-block" style="margin-top: 6rem; font-size: 1.4rem; font-weight: 500;">
+                    <p class="d-none d-md-block" style="margin-top: 6rem; font-size: 1.4rem; font-weight: 500; text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">
                         Nuestros proyectos están enfocados en preservar el medio ambiente, reducir la contaminación y promover prácticas sostenibles. Desde la reforestación y el cuidado de ecosistemas, hasta la educación ambiental en comunidades, cada proyecto es una oportunidad para transformar nuestro entorno.
                     </p>
                     <!-- Texto reducido para pantallas pequeñas -->
-                    <p class="d-block d-md-none mt-4" style="font-size: 1rem; font-weight: 500;">
+                    <p class="d-block d-md-none mt-4" style="font-size: 1rem; font-weight: 500; text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">
                         Nuestros proyectos buscan preservar el medio ambiente y promover prácticas sostenibles. Conoce nuestras iniciativas y cómo estamos generando un impacto.
                     </p>
                     <button onclick="proyectos()" class="btn btn-primary boton-carr py-1 mt-5" style="font-size: 1.1rem; font-weight: 500;">VER PROYECTOS</button>
@@ -96,13 +96,13 @@
             <div class="carousel-item">
                 <img src="IMG/CARRUSEL/SLIDE-DONAR.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption w-75">
-                    <h2>¿Cómo ayudar?</h2>
+                    <h2 style="text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);"> ¿Cómo ayudar?</h2>
                     <!-- Texto para pantallas grandes -->
-                    <p class="d-none d-md-block" style="margin-top: 6rem; font-size: 1.4rem; font-weight: 500;">
+                    <p class="d-none d-md-block" style="margin-top: 6rem; font-size: 1.4rem; font-weight: 500; text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">
                         Tu donación es esencial para el desarrollo de nuestros proyectos y para ampliar el impacto de nuestra misión. Cada aporte cuenta y se destina directamente a las iniciativas de conservación y apoyo comunitario que llevamos a cabo. ¡Doná hoy y sé parte del cambio!
                     </p>
                     <!-- Texto reducido para pantallas pequeñas -->
-                    <p class="d-block d-md-none mt-4" style="font-size: 1rem; font-weight: 500;">
+                    <p class="d-block d-md-none mt-4" style="font-size: 1rem; font-weight: 500; text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);">
                         Tu donación es esencial para nuestros proyectos y el impacto de nuestra misión. ¡Doná hoy y sé parte del cambio!
                     </p>
                     <button onclick="donar()" class="btn btn-primary boton-carr py-1 mt-5" style="font-size: 1.1rem; font-weight: 500;">DONAR</button>
@@ -132,7 +132,7 @@
                     <p class="card-text mb-5 d-none d-md-block" style="font-size: x-large; text-align: justify;">
                         Tu generosidad es clave para que podamos continuar con nuestras acciones y expandir nuestro alcance. Cada donación tiene un impacto real, ayudando a financiar programas y proyectos que benefician a quienes más lo necesitan. Juntos podemos lograr grandes cambios. ¡Haz tu donación hoy y contribuye a construir un futuro mejor!
                     </p>
-                    <p class="d-block d-md-none mb-5" style="font-size: 1.2rem; font-weight: 500;">
+                    <p class="d-block d-md-none mb-5" style="font-size: 1.2rem; font-weight: 500; text-align: justify;">
                         Tu apoyo es fundamental para seguir ayudando a quienes más lo necesitan. ¡Hace tu donación hoy y marca la diferencia!
                     </p>
                     <div class="d-flex justify-content-center">
@@ -208,37 +208,73 @@
 <!-- TESTIMONIOS -->
 <div class="testimonios pb-4 mt-4">
     <h1 class="titulo-testimonios text-center pt-3 mb-4">Testimonios de voluntarios y Beneficiarios</h1>
-    <div class="botones position-relative d-flex justify-content-center">
+    <div class="botones position-relative d-flex justify-content-center flex-wrap">
 
-        <!-- Testimonios -->
-        <div class="container cont-testimonio col-md-6 active" style="height: rem; width: 35rem;">
-            <div class="testimonio text-center p-3">
-                <h3 class="mt-2 mb-2">Juan Perez (Voluntario)</h3>
-                <span style="font-size: x-large; font-weight: 400;">
-                    Unirme a la ONG fue transformador. Cada jornada de reforestación o limpieza me llena de orgullo al ver nuestro impacto positivo en la tierra.                </span>
+        <!-- Testimonio Juan Perez -->
+        <div class="container cont-testimonio col-md-6 active" style="width: 40rem;">
+            <div class="testimonio d-flex p-2">
+                <!-- Imagen a la derecha -->
+                <div class="mt-4">
+                    <img src="IMG/TESTIMONIOS/juan-perez.webp" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
+                </div>
+                <!-- Texto a la izquierda -->
+                <div class=" mt-2 ms-3">
+                    <h3 class="mb-2">Juan Perez (Voluntario)</h3>
+                    <span style="font-size: x-large; font-weight: 400; text-align: justify;">
+                        Unirme a la ONG fue transformador. Cada jornada de reforestación o limpieza me llena de orgullo al ver nuestro impacto positivo en la tierra.
+                    </span>
+                </div>
             </div>
         </div>
 
-        <div class="container cont-testimonio col-md-6" style="height: rem; width: 35rem;">            
-            <div class="testimonio text-center p-3">
-                <h3 class="mt-2 mb-2">Maria Lopez (Beneficiaria)</h3>
-                <span style="font-size: x-large; font-weight: 400;">
-                    Gracias a esta ONG, mi comunidad disfruta de un parque limpio y seguro, lleno de vida. Sus talleres nos enseñan a reciclar y cuidar el medioambiente.                </span>
+        <!-- Testimonio Maria Lopez -->
+        <div class="container cont-testimonio col-md-6" style="height: rem; width: 40rem;">            
+            <div class="testimonio d-flex p-2">
+                <!-- Imagen a la derecha -->
+                <div class="mt-4">
+                    <img src="IMG/TESTIMONIOS/Maria-Lopez.webp" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
+                </div>
+                <!-- Texto a la izquierda -->
+                <div class="mt-2 ms-3">
+                    <h3 class="mb-2">Maria Lopez (Beneficiaria)</h3>
+                    <span style="font-size: x-large; font-weight: 400; text-align: justify;">
+                        Gracias a esta ONG, mi comunidad disfruta de un parque limpio y seguro, lleno de vida. Sus talleres nos enseñan a reciclar y cuidar el medioambiente.
+                    </span>
+                </div>
             </div>
         </div>
 
-        <div class="container cont-testimonio col-md-6" style="height: rem; width: 35rem;">            
-            <div class="testimonio text-center p-3">
-                <h3 class="mt-2 mb-2">Carlos Rivera (Voluntario)</h3>
-                <span style="font-size: x-large; font-weight: 400;">
-                    Como voluntario, he plantado árboles, limpiado ríos y aprendido sobre sostenibilidad. Nada se compara con proteger nuestro hogar: la naturaleza.            </div>
+        <!-- Testimonio Carlos Rivera -->
+        <div class="container cont-testimonio col-md-6" style="height: rem; width: 40rem;">            
+            <div class="testimonio d-flex p-2">
+                <!-- Imagen a la derecha -->
+                <div class="mt-4">
+                    <img src="IMG/TESTIMONIOS/CarlosRivera.jpg" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
+                </div>
+                <!-- Texto a la izquierda -->
+                <div class="mt-2 ms-3">
+                    <h3 class="mb-2">Carlos Rivera (Voluntario)</h3>
+                    <span style="font-size: x-large; font-weight: 400; text-align: justify;">
+                        Como voluntario, he plantado árboles, limpiado ríos y aprendido sobre sostenibilidad. Nada se compara con proteger nuestro hogar: la naturaleza.
+                    </span>
+                </div>
+            </div>
         </div>
 
-        <div class="container cont-testimonio col-md-6" style="height: rem; width: 35rem;">            
-            <div class="testimonio text-center p-3">
-                <h3 class="mt-2 mb-2">Martin muñoz (Beneficiario)</h3>
-                <span style="font-size: x-large; font-weight: 400;">
-                    Aprendí prácticas sostenibles para mi campo. Con su ayuda instalé sistemas ecológicos, mejoré mi cosecha y cuido el planeta para el futuro.                </span>
+        <!-- Testimonio Martin Muñoz -->
+        <div class="container cont-testimonio col-md-6" style="height: rem; width: 40rem;">            
+            <div class="testimonio d-flex p-2">
+                <!-- Imagen a la derecha -->
+                <div class="mt-4">
+                    <img src="IMG/TESTIMONIOS/Martin-muñoz.jpeg" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
+                </div>
+                <!-- Texto a la izquierda -->
+                <div class="mt-2 ms-3">
+                    <h3 class="mb-2">Martin Muñoz (Beneficiario)</h3>
+                    <span style="font-size: x-large; font-weight: 400; text-align: justify;">
+                        Aprendí prácticas sostenibles para mi campo. Con su ayuda instalé sistemas ecológicos, mejoré mi cosecha y cuido el planeta para el futuro.
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -301,17 +337,6 @@ function showTestimonial(index) {
         fadeIn(testimonios[currentIndex]);
     }, 250);  // Esperar que termine el desvanecimiento antes de cambiar
 }
-
-// // Event Listeners para los botones
-// document.getElementById('prevBtn').addEventListener('click', () => {
-//     const newIndex = (currentIndex > 0) ? currentIndex - 1 : testimonios.length - 1;
-//     showTestimonial(newIndex);
-// });
-
-// document.getElementById('nextBtn').addEventListener('click', () => {
-//     const newIndex = (currentIndex < testimonios.length - 1) ? currentIndex + 1 : 0;
-//     showTestimonial(newIndex);
-// });
 
 // Inicializar el primer testimonio como activo
 fadeIn(testimonios[currentIndex]);

@@ -21,7 +21,9 @@
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
-            <span class="ms-2 " style="font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 500; color:#f2f2f2;">ALIANZA NATURAL</span>
+            <div class="logo-container ms-2">
+                <span class="logo-text nav-link">Alianza Natural</span>
+            </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,15 +46,15 @@
     <div class="row align-items-center">
         <!-- Sección izquierda -->
         <div class="col-md-6 text-center" style="color: white;">
-            <h3 class="mb-4 d-none d-md-block ms-5" style="font-size: 2.5rem;">CON TU DONACIÓN</h3>
-            <h3 class="mb-4 d-block d-md-none" style="font-size: 1.9rem;">CON TU DONACIÓN</h3>
-            <p class="container d-block d-md-none mb-4" style="text-align: justify; font-weight: 600; font-size: 1.1rem;">
-                Con tu donación, estás contribuyendo directamente a la protección del medio ambiente y al desarrollo sostenible. 
+            <h3 class="mb-4 d-none d-md-block ms-5" style="font-size: 2.5rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">CON TU DONACIÓN</h3>
+            <h3 class="mb-4 d-block d-md-none" style="font-size: 1.9rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">CON TU DONACIÓN</h3>
+            <p class="container d-block d-md-none mb-4" style="text-align: justify; font-weight: 600; font-size: 1.1rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">
+                Con tu aporte, estás contribuyendo directamente a la protección del medio ambiente y al desarrollo sostenible. 
                 Tu apoyo nos permite llevar adelante proyectos de reforestación, educación ambiental y reciclaje, impactando positivamente 
                 en comunidades y ecosistemas. Cada aporte, sin importar su tamaño, hace una gran diferencia para lograr un futuro más verde y sostenible.
             </p>
-            <p class="container d-none d-md-block ms-5" style="text-align: justify; font-weight: 600; font-size: 1.2rem;">
-                Con tu donación, estás contribuyendo directamente a la protección del medio ambiente y al desarrollo sostenible. 
+            <p class="container d-none d-md-block ms-5" style="text-align: justify; font-weight: 600; font-size: 1.4rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">
+                Con tu aporte, estás contribuyendo directamente a la protección del medio ambiente y al desarrollo sostenible. 
                 Tu apoyo nos permite llevar adelante proyectos de reforestación, educación ambiental y reciclaje, impactando positivamente 
                 en comunidades y ecosistemas. Cada aporte, sin importar su tamaño, hace una gran diferencia para lograr un futuro más verde y sostenible.
             </p>
@@ -61,21 +63,21 @@
         <div class="col-md-1"></div>
         <div class="col-md-4">
             <form id="contactForm" style="background-color: rgb(197, 197, 197); padding: 1.5rem; border-radius: 5px;">
-                <h5 class="text-center">Completa el siguiente formulario para una donacion bancaria</h5>                    
+                <h5 class="text-center">Completá el siguiente formulario para una donacion bancaria.</h5>                    
                 <div class="mb-3">
-                    <label for="nombreApellido" class="form-label" style="color: black;">Nombre y Apellido</label>
+                    <label for="nombreApellido" class="form-label" style="color: black;">Nombre y Apellido:</label>
                     <input type="text" class="form-control" id="nombreApellido" placeholder="Ejemplo: Juan Pérez" required>
                 </div>
                 <div class="mb-3">
-                    <label for="dni" class="form-label" style="color: black;">DNI</label>
+                    <label for="dni" class="form-label" style="color: black;">DNI:</label>
                     <input type="text" class="form-control" id="dni" placeholder="Ejemplo: 12345678" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label" style="color: black;">Email</label>
+                    <label for="email" class="form-label" style="color: black;">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Ejemplo: correo@ejemplo.com" required>
                 </div>
                 <div class="mb-3">
-                    <label for="tipoDonacion" class="form-label" style="color: black;">Tipo de donacion</label>
+                    <label for="tipoDonacion" class="form-label" style="color: black;">Tipo de donación:</label>
                     <select class="form-control" id="tipoDonacion" required style="appearance: none; background: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 10 6\'%3E%3Cpath d=\'M0 0l5 6 5-6H0z\' fill=\'%23000000\'/%3E%3C/svg%3E') no-repeat right 10px center; background-size: 10px; background-color: white;">
                         <option value="" disabled selected>Seleccione una opción</option>
                         <option value="unica">Única</option>
@@ -90,20 +92,20 @@
 
 <div class="mb-4 pb-2 justify-content-center" style="background-color: #dcdfcd79;"> 
     <div class="container text-center pt-4">
-        <h2 style="color: black; font-weight: 600;">CONOCE OTRAS FORMAS DE DONAR</h2>
+        <h2 style="color: black; font-weight: 600;">CONOCÉ OTRAS FORMAS DE DONAR</h2>
     </div>
     <div class="container w-50 justify-content-center align-items-center">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 my-4 d-flex justify-content-center">
                 <button onclick="popupmp()" class="boton mercadopago" style="background-color: transparent; border: none;">
                     <img src="IMG/DONACIONES/mercadopago.png" style="height: 9rem; background-color: transparent;" class="card-img-top" alt="MERCADO PAGO">
-                    <p class="mt-3" style="font-weight: 600;"> MERCADO PAGO</p>
+                    <p class="mt-3" style="font-weight: 600;font-size: 1.2rem;"> MERCADO PAGO</p>
                 </button>
             </div>
             <div class="col-md-5 my-4 d-flex justify-content-center">
                 <button onclick="popuptransferencia()" class="boton transferencia" style="background-color: transparent; border: none;">
                     <img src="IMG/DONACIONES/transferencia.png" style="height: 9rem;" class="card-img-top" alt="TRANSFERENCIA">
-                    <p class="mt-3" style="font-weight: 600;"> TRANSFERENCIA </p>
+                    <p class="mt-3" style="font-weight: 600; font-size: 1.2rem;"> TRANSFERENCIA </p>
                 </button>
             </div>
         </div>
@@ -142,7 +144,7 @@
         event.preventDefault(); // Evitar el envío por defecto del formulario
         Swal.fire({
             html: `
-                <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+                <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left; ">
                     <div>
                         <label for="numTarjeta" style="display: block; font-weight: bold;">Número de tarjeta:</label>
                         <input type="text" id="numTarjeta" maxLength="16" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" placeholder="Ingrese el número de tarjeta">
@@ -209,7 +211,7 @@
         Swal.fire({
             title: 'Detalles de Transferencia',
             html: `
-                <div class="transferencia-info">
+                <div class="transferencia-info" style="font-size: 1.5rem; color:black; text-align: left;">
                     <p><strong>Nombre del Banco:</strong> Banco Nación</p>
                     <p><strong>CUIT:</strong> 20-12345678-9</p>
                     <p><strong>Alias:</strong> donacion.alianza</p>
@@ -227,3 +229,10 @@
 
 </script>
 
+<style>
+
+    body{
+
+    }
+
+</style>

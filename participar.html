@@ -22,7 +22,9 @@
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
-            <span class="ms-2 " style="font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 500; color:#f2f2f2;">ALIANZA NATURAL</span>
+            <div class="logo-container ms-2">
+                <span class="logo-text nav-link">Alianza Natural</span>
+            </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,37 +47,31 @@
     <div class="row align-items-center">
         <!-- Sección izquierda -->
         <div class="col-md-6 text-center" style="color: white;">
-            <h3 class="mb-4 d-none d-md-block ms-5" style="font-size: 2.5rem;">UNIRSE AL EQUIPO</h3>
-            <h3 class="mb-4 d-block d-md-none" style="font-size: 1.9rem;">UNIRSE AL EQUIPO</h3>
-            <p class="container d-block d-md-none mb-4" style="text-align: justify; font-weight: 600; font-size: 1.1rem;">
-                Unirse a nuestro equipo es ser parte de una comunidad que promueve la protección del medio ambiente y el desarrollo sostenible. 
-                Como voluntario, podrás aprender nuevas habilidades, colaborar en proyectos impactantes y conectar con personas que comparten tus valores. 
-                Tu participación será clave para fortalecer iniciativas de reforestación, educación ambiental y reciclaje, ¡cada acción cuenta!
-            </p>
-            <p class="container d-none d-md-block ms-5" style="text-align: justify; font-weight: 600; font-size: 1.2rem;">
-                Unirse a nuestro equipo es ser parte de una comunidad que promueve la protección del medio ambiente y el desarrollo sostenible. 
-                Como voluntario, podrás aprender nuevas habilidades, colaborar en proyectos impactantes y conectar con personas que comparten tus valores. 
-                Tu participación será clave para fortalecer iniciativas de reforestación, educación ambiental y reciclaje, ¡cada acción cuenta!
-            </p>
+            <h3 class="mb-4 d-none d-md-block ms-5" style="font-size: 2.5rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">UNIRSE AL EQUIPO</h3>
+            <h3 class="mb-4 d-block d-md-none" style="font-size: 1.9rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">UNIRSE AL EQUIPO</h3>
+            <p class="container d-block d-md-none mb-4" style="text-align: justify; font-weight: 600; font-size: 1.1rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">
+                Formar parte de nuestra comunidad significa comprometerse con la protección del medio ambiente y el desarrollo sostenible. Como voluntario, tendrás la oportunidad de adquirir nuevas habilidades, participar en proyectos transformadores y conectar con personas que comparten tus valores. Tu apoyo será fundamental para impulsar iniciativas de reforestación, educación ambiental y reciclaje. ¡Cada acción cuenta!            </p>
+            <p class="container d-none d-md-block ms-5" style="text-align: justify; font-weight: 600; font-size: 1.4rem; text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);">
+                Formar parte de nuestra comunidad significa comprometerse con la protección del medio ambiente y el desarrollo sostenible. Como voluntario, tendrás la oportunidad de adquirir nuevas habilidades, participar en proyectos transformadores y conectar con personas que comparten tus valores. Tu apoyo será fundamental para impulsar iniciativas de reforestación, educación ambiental y reciclaje. ¡Cada acción cuenta!            </p>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-4">
             <form id="contactForm" style="background-color: rgb(197, 197, 197); padding: 1.5rem; border-radius: 5px;">
-                <h5 class="text-center">Completa el siguiente formulario y nos pondremos en contacto para continuar con el proceso</h5>                    
+                <h5 class="text-center">Completá el siguiente formulario y nos pondremos en contacto para continuar con el proceso.</h5>                    
                 <div class="mb-3">
-                    <label for="nombreApellido" class="form-label" style="color: black;">Nombre y Apellido</label>
+                    <label for="nombreApellido" class="form-label" style="color: black;">Nombre y Apellido:</label>
                     <input type="text" class="form-control" id="nombreApellido" placeholder="Ejemplo: Juan Pérez" required>
                 </div>
                 <div class="mb-3">
-                    <label for="dni" class="form-label" style="color: black;">DNI</label>
+                    <label for="dni" class="form-label" style="color: black;">DNI:</label>
                     <input type="text" class="form-control" id="dni" placeholder="Ejemplo: 12345678" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label" style="color: black;">Email</label>
+                    <label for="email" class="form-label" style="color: black;">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Ejemplo: correo@ejemplo.com" required>
                 </div>
                 <div class="mb-3">
-                    <label for="telefono" class="form-label" style="color: black;">Número de Teléfono</label>
+                    <label for="telefono" class="form-label" style="color: black;">Número de Teléfono:</label>
                     <input type="tel" class="form-control" id="telefono" placeholder="Ejemplo: +54 9 11 1234-5678" required>
                 </div>
                 <button type="submit" class="btn btn-success mt-2 col-12">Enviar</button>
@@ -132,10 +128,11 @@
         .then(function(response) {
             Swal.fire({
                 title: '¡Éxito!',
-                text: 'Revisa tu casilla de correo para continuar con el proceso de inscripción.',
+                text: 'Revisá tu casilla de correo para continuar con el proceso de inscripción.',
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
             });
+            document.getElementById("contactForm").reset();
         }, function(error) {
             Swal.fire({
                 title: '¡Error!',
@@ -143,7 +140,6 @@
                 icon: 'error',
                 confirmButtonText: 'Aceptar'
             });
-            console.error(error);
         });
     });
 </script>

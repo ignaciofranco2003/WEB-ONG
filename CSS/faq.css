@@ -27,7 +27,7 @@ body{
 }
 
 .accordion-body {
-    background-color: #b7f3a8cb; /* Fondo blanco */
+    background-color: #b7f3a8cb; 
     color: #000000; /* Color del texto */
     padding: 15px; /* Espaciado interno para la respuesta */
     font-size: 1.4rem;

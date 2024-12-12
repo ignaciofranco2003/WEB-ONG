@@ -135,6 +135,7 @@
 /* Contenido de la tarjeta */
 .news-card-body {
     padding: 1rem;
+    text-align: justify;
 }
 /* Estilos para el título y la fecha */
 .news-title {
@@ -145,6 +146,9 @@
 .news-date {
     font-size: 0.9rem;
     color: #777;
+}
+.card-text{
+    color:black;
 }
 /* NOTICIAS */
 
@@ -204,7 +208,7 @@
     }
 
     .testimonios{
-        height: 26rem;
+        height: 39rem;
     }
 
     .cont-testimonio{

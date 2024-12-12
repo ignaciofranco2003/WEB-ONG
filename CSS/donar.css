@@ -35,6 +35,19 @@ footer {
     background-color: #b8b8b8;
     color: #333;
     border-radius: 10px;
+    width: 30rem;
+    height: 22rem;
+}
+
+@media (max-width: 768px) {
+    .custom-swal-popup {
+        background-color: #b8b8b8;
+        color: #333;
+        border-radius: 10px;
+        width: 30rem;
+        height: 30rem;
+        font-size: 1.1rem;
+    }
 }
 
 .custom-swal-popup-donacion{
@@ -45,12 +58,8 @@ footer {
 
 .custom-swal-title {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 700;
-}
-
-.custom-swal-html {
-    font-size: 1.1rem;
 }
 
 .transferencia-info {
