@@ -25,3 +25,18 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+
+function changePage(pageNumber) {
+    // Obtén todos los elementos de la paginación
+    var pageItems = document.querySelectorAll('.page-item');
+
+    // Recorre cada página y elimina la clase 'active'
+    pageItems.forEach(function(item) {
+        item.classList.remove('active');
+    });
+
+    // Agrega la clase 'active' al número de página seleccionado
+    var activePage = document.querySelector('.page-link[href="#"]:contains("' + pageNumber + '")').parentElement;
+    activePage.classList.add('active');
+}
+

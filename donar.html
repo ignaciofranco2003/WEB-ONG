@@ -112,6 +112,7 @@
     </div>
 </div>
 
+
 <!-- Footer -->
 <footer class="text-center" style="border-top: 1px solid gray; background-color: #449f48;">
     <div class="container p-2 mt-2">
@@ -137,6 +138,8 @@
 <!-- Footer -->
 </body>
 </html>
+
+
 
 <script>
 
@@ -214,8 +217,15 @@
                 <div class="transferencia-info" style="font-size: 1.5rem; color:black; text-align: left;">
                     <p><strong>Nombre del Banco:</strong> Banco Nación</p>
                     <p><strong>CUIT:</strong> 20-12345678-9</p>
-                    <p><strong>Alias:</strong> donacion.alianza</p>
-                    <p><strong>CBU:</strong> 1234567890123456789012</p>
+                    <p>
+                        <strong>Alias:</strong> donacion.alianza
+                        <i id="iconoAlias" onclick="copiarTexto('alias')" class="bi bi-copy" style="margin-left: 10px; cursor: pointer; font-size: 1.5rem; ccolor: #353535;"></i>
+                    </p>
+                    <p>
+                        <strong>CBU:</strong> 123456789012341
+                        <i id="iconoCbu" onclick="copiarTexto('cbu')" class="bi bi-copy" style="margin-left: 10px; cursor: pointer; font-size: 1.5rem; color: #353535;"></i>
+                    </p>
+                    <p id="mensajeConfirmacion" style="font-size: 1.2rem; color: green; display: none;">¡Texto copiado al portapapeles!</p>
                 </div>
             `,
             confirmButtonText: 'Cerrar',
@@ -225,6 +235,30 @@
                 htmlContainer: 'custom-swal-html',
             }
         });
+    }
+
+    function copiarTexto(tipo) {
+        let texto;
+        if (tipo === 'alias') {
+            texto = "donacion.alianza"; // Alias a copiar
+        } else if (tipo === 'cbu') {
+            texto = "1234567890123456789012"; // CBU a copiar
+        }
+
+        // Crea un elemento de texto temporal
+        let input = document.createElement('input');
+        input.setAttribute('value', texto);
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+
+        // Muestra el mensaje de confirmación en la misma alerta
+        let mensaje = document.getElementById('mensajeConfirmacion');
+        mensaje.style.display = 'block'; // Muestra el mensaje de confirmación
+        setTimeout(() => {
+            mensaje.style.display = 'none'; // Oculta el mensaje después de 3 segundos
+        }, 3000);
     }
 
 </script>

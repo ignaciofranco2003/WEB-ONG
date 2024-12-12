@@ -37,14 +37,15 @@
 }
 
 .card-img-2{
-    margin-top: 0.5rem;
+    margin:auto;
     width: 15rem; 
-    height: 17rem;
+    height: 14rem;
     border-radius: 15px;
 }
 
 .noticia{
-    height: 18rem;
+
+    max-height: 32rem;
 }
 
 /* BACK TO TOP */
@@ -100,24 +101,64 @@
     color:black;
 }
 
-/* 1. Asegúrate de que el body ocupe todo el alto de la pantalla */
+/* Estilos para el paginado */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+
+.page-link {
+    font-size: 1.2rem;
+    display: block;
+    padding: 8px 16px;
+    background-color: #e4e5e6;
+    border: 1px solid #ddd;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+    background-color: #f8f9fa;
+}
+
+
+
 body, html {
     height: 100%;
     margin: 0;
 }
 
-/* 2. Contenedor principal en flexbox */
 body {
     display: flex;
     flex-direction: column;
 }
 
-/* 3. La sección de noticias debe tomar todo el espacio disponible */
 .news-section-2 {
     flex-grow: 1;
 }
 
-/* 4. Footer debe estar al final */
 footer {
     margin-top: auto;
 }

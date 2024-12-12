@@ -56,7 +56,7 @@
 <!-- Sección de noticias -->
 <section class="news-section-2 mt-4 d-none d-lg-block">
     <div class="container">
-        <h2 class="text-center mb-4">Últimas Noticias</h2>
+        <h1 class="text-center mb-4">Todas las noticias</h1>
         <div class="row">
             <!-- Noticia 1 -->
             <div class="col-lg-6 col-md-12 mb-4 noticia">
@@ -140,6 +140,7 @@
 <!-- NOTICIAS  en pantallas reducidas-->
 <section class="news-section-2 mt-4 d-block d-lg-none">
     <div class="container">
+        <h1 class="text-center mb-4">Todas las noticias</h1>
         <div class="row">
             <!-- Noticia 1 -->
             <div class="col-md-12  mb-4">
@@ -254,66 +255,3 @@
 
 </body>
 </html>
-
-
-<style>
-/* Estilos para el paginado */
-.pagination {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.page-item {
-    margin: 0 5px;
-}
-
-.page-link {
-    font-size: 1.2rem;
-    display: block;
-    padding: 8px 16px;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.page-link:hover {
-    background-color: #e9ecef;
-}
-
-.page-item.active .page-link {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-}
-
-.page-item.disabled .page-link {
-    color: #ccc;
-    pointer-events: none;
-    background-color: #f8f9fa;
-}
-
-</style>
-
-<script>
-
-function changePage(pageNumber) {
-    // Obtén todos los elementos de la paginación
-    var pageItems = document.querySelectorAll('.page-item');
-
-    // Recorre cada página y elimina la clase 'active'
-    pageItems.forEach(function(item) {
-        item.classList.remove('active');
-    });
-
-    // Agrega la clase 'active' al número de página seleccionado
-    var activePage = document.querySelector('.page-link[href="#"]:contains("' + pageNumber + '")').parentElement;
-    activePage.classList.add('active');
-}
-
-</script>
