@@ -150,6 +150,16 @@
 .card-text{
     color:black;
 }
+
+.ver-noticias{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.ver-noticias:hover{
+    background-color: darkblue;
+}
 /* NOTICIAS */
 
 

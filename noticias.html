@@ -9,39 +9,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Incluir SweetAlert -->
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/noticias.css">
+    <script src="JS/app.js"></script>
     <link rel="icon" type="image/x-icon" href="IMG/LOGO-4.png">
     <title>NOTICIAS ONG</title>
 </head>
 <body>
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(201, 201, 201);">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#449f48;">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <!-- <img src="IMG/LOGO-3.png" alt="Logo" width="70" height="70" class="d-inline-block"> -->
             <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
-            <span class="ms-2 " style="font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 500; color:#000000;">ALIANZA NATURAL</span>
+            <div class="logo-container ms-2">
+                <span class="logo-text nav-link">Alianza Natural</span>
+            </div>
         </a>
         <!-- Botón de colapso para pantallas pequeñas -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
         </button>
         <!-- Menú de navegación que se colapsa -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto lista-nav">  <!-- ms-auto para alinear a la derecha -->
                 <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="donar.html">Donar</a>
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;" aria-current="page" href="donar.html">Donar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="proyectos.html">Proyectos</a>
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;" aria-current="page" href="proyectos.html">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="noticias.html" style="border-bottom: 5px solid;">Noticias</a>
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2; border-bottom: 5px solid;" aria-current="page" href="noticias.html">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-link me-4" aria-current="page" href="participar.html">Voluntariado</a>
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;;" aria-current="page" href="participar.html">Voluntariado</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-link me-2" aria-current="page" href="faq.html">Preguntas frecuentes</a>
+                    <a class="nav-link custom-link me-2" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;;" aria-current="page" href="faq.html">Preguntas frecuentes</a>
                 </li>
             </ul>
         </div>
@@ -50,21 +53,267 @@
 <!-- NAVBAR -->
 
 
-<div class="wip text-center" style="margin-top: 15rem;">
-    <h1 class="display-4 mb-4 lead text-muted" style="color: black; font-weight: 600;">
-        <i class="bi bi-tools" style="font-size: 3rem; "></i>
-        SITIO EN CONSTRUCCIÓN
-        <i class="bi bi-hammer" style="font-size: 3rem;"></i>
-    </h1>
-    <div class="mb-3">
-        <i class="bi bi-cone-striped" style="font-size: 4rem; color: #ff9800cc;"></i>
+<!-- Sección de noticias -->
+<section class="news-section-2 mt-4 d-none d-lg-block">
+    <div class="container">
+        <h2 class="text-center mb-4">Últimas Noticias</h2>
+        <div class="row">
+            <!-- Noticia 1 -->
+            <div class="col-lg-6 col-md-12 mb-4 noticia">
+                <a href="noticia.html" class="news-card-2 d-flex align-items-start">
+                    <img src="IMG/NOTICIAS/as-populacoes-menos-poluentes-do-mundo-correm-um-risco-muito-maior-de-inundacoes-provocadas-pelas-alteracoes-climaticas-1731439429516_1024.webp" class="card-img-2" alt="Noticia 1">
+                    <div class="news-card-body-2">
+                        <p class="news-date-2">10 de Noviembre, 2024</p>
+                        <h5 class="news-title-2">Las poblaciones menos contaminantes del mundo corren un riesgo mayor de sufrir inundaciones por el cambio climático.</h5>
+                        <p class="card-text-2">Un nuevo estudio ha revelado por primera vez que los habitantes de los países que menos contribuyen al cambio climático ya están soportando el peso de sus devastadoras consecuencias y que la carga va a empeorar.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Noticia 2 -->
+            <div class="col-lg-6 col-md-6 mb-4 noticia">
+                <a href="noticia.html" class="news-card-2">
+                    <img src="IMG/NOTICIAS/un-paciente-con-sintomas-de-dengue-espera-ser-CMCSWV2W7RHG5LXFYA745ETZ5E.avif" class="card-img-2" alt="Noticia 2">
+                    <div class="news-card-body-2">
+                        <p class="news-date-2">9 de Noviembre, 2024</p>
+                        <h5 class="news-title-2">El cambio climático ya afecta la salud en la Argentina, según un informe de expertos internacionales.</h5>
+                        <p class="card-text-2">The Lancet Countdown, que reúne a 122 especialistas de 57 instituciones, expuso las devastadoras consecuencias del calentamiento global en América Latina; las variables que impactan en el país.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="col-lg-6 col-md-6 mb-4 noticia">
+                <a href="noticia.html" class="news-card-2">
+                    <img src="IMG/NOTICIAS/WKH7AGGZOUNTNDBPL6BV3EVNU4.avif" class="card-img-2" alt="Noticia 3">
+                    <div class="news-card-body-2">
+                        <p class="news-date-2">10 de Noviembre, 2024</p>
+                        <h5 class="news-title-2">Las acciones climáticas solo alcanzan un tercio del objetivo en la reducción de temperatura</h5>
+                        <p class="card-text-2">En el marco de la COP29, ayer se conoció un estudio que muestra que las emisiones de dióxido de carbono volvieron a marcar un nuevo récord. Los detalles.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 4 -->
+            <div class="col-lg-6 col-md-6 mb-4 noticia">
+                <a href="noticia.html" class="news-card-2 ">
+                    <img src="IMG/NOTICIAS/5c740716-atanor_02-1024x576.jpg" class="card-img-2 rounded" alt="Noticia 4">
+                    <div class="news-card-body-2 ">
+                        <p class="news-date-2">11 de Noviembre, 2024</p>
+                        <h5 class="news-title-2">Explosión en fábrica química de San Nicolás contaminó parte de la ciudad</h5>
+                        <p class="card-text-2">El 20 de marzo pasado, se produjo en esta localidad de la provincia de Buenos Aires, una explosión con liberación de agrotóxicos en una de las plantas de la empresa ATANOR.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Paginado -->
+        <div class="d-flex justify-content-center mt-4 mb-4">
+            <nav>
+                <ul class="pagination" id="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(1)">«</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(1)">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(2)">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(3)">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(4)">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(4)">...</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(4)">»</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <p class="lead text-muted" style="font-weight: 700; font-size: larger;">Estamos trabajando para mejorar la experiencia.</p>
-</div>
+</section>
+<!-- Sección de noticias -->
+
+<!-- NOTICIAS  en pantallas reducidas-->
+<section class="news-section-2 mt-4 d-block d-lg-none">
+    <div class="container">
+        <div class="row">
+            <!-- Noticia 1 -->
+            <div class="col-md-12  mb-4">
+                <a href="noticia.html" class="news-card">
+                    <img src="IMG/NOTICIAS/as-populacoes-menos-poluentes-do-mundo-correm-um-risco-muito-maior-de-inundacoes-provocadas-pelas-alteracoes-climaticas-1731439429516_1024.webp" class="card-img-top" alt="Noticia 1">
+                    <div class="news-card-body">
+                        <p class="news-date">10 de Noviembre, 2024</p>
+                        <h5 class="news-title">Las poblaciones menos contaminantes del mundo corren un riesgo mayor de sufrir inundaciones por el cambio climático.</h5>
+                        <p class="card-text">Un nuevo estudio ha revelado por primera vez que los habitantes de los países que menos contribuyen al cambio climático ya están soportando el peso de sus devastadoras consecuencias y que la carga va a empeorar.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="col-md-12 mb-4">
+                <a href="noticia.html" class="news-card">
+                    <img src="IMG/NOTICIAS/un-paciente-con-sintomas-de-dengue-espera-ser-CMCSWV2W7RHG5LXFYA745ETZ5E.avif" class="card-img-top" alt="Noticia 2">
+                    <div class="news-card-body">
+                        <p class="news-date">9 de Noviembre, 2024</p>
+                        <h5 class="news-title">El cambio climático ya afecta la salud en la Argentina, según un informe de expertos internacionales.</h5>
+                        <p class="card-text">The Lancet Countdown, que reúne a 122 especialistas de 57 instituciones, expuso las devastadoras consecuencias del calentamiento global en América Latina; las variables que impactan en el país</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="col-md-12 mb-4">
+                <a href="noticia.html" class="news-card">
+                    <img src="IMG/NOTICIAS/WKH7AGGZOUNTNDBPL6BV3EVNU4.avif" class="card-img-top" alt="Noticia 3">
+                    <div class="news-card-body">
+                        <p class="news-date">10 de Noviembre, 2024</p>
+                        <h5 class="news-title">Las acciones climáticas solo alcanzan un tercio del objetivo en la reducción de temperatura</h5>
+                        <p class="card-text">En el marco de la COP29, ayer se conoció un estudio que muestra que las emisiones de dióxido de carbono volvieron a marcar un nuevo récord. Los detalles.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 4 -->
+            <div class="col-md-12 mb-4">
+                <a href="noticia.html" class="news-card">
+                    <img src="IMG/NOTICIAS/5c740716-atanor_02-1024x576.jpg" class="card-img-top" alt="Noticia 4">
+                    <div class="news-card-body">
+                        <p class="news-date">11 de Noviembre, 2024</p>
+                        <h5 class="news-title">Explosión en fábrica química de San Nicolás contaminó parte de la ciudad</h5>
+                        <p class="card-text">El 20 de marzo pasado, se produjo en esta localidad de la provincia de Buenos Aires, una explosión con liberación de agrotóxicos en una de las plantas de la empresa ATANOR.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Paginado -->
+        <div class="d-flex justify-content-center mt-4 mb-4">
+            <nav>
+                <ul class="pagination" id="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(1)">«</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(1)">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(2)">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(3)">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(4)">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(4)">...</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage(4)">»</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<!-- NOTICIAS -->
+
+<!-- Botón back to top -->
+<button id="backToTop" class="btn btn-info" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000;" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up" style="color: black;"></i>
+</button>
+<!-- Botón back to top -->
+
+
+<!-- Footer -->
+<footer class="text-center"  style="border-top: 1px solid gray; background-color: #449f48;">
+    <div class="container p-2 mt-4">
+        <!-- Section: Social media -->
+        <section>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border: transparent;" href="https://www.facebook.com/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;  border: transparent;" href="https://x.com/" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;  border: transparent;" href="https://www.instagram.com/" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pb-4">
+        © 2024 Copyright:
+        <a class="text-dark" style="text-decoration: none;">IHC</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
 </body>
 </html>
 
+
 <style>
+/* Estilos para el paginado */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    font-size: 1.2rem;
+    display: block;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+    background-color: #f8f9fa;
+}
 
 </style>
+
+<script>
+
+function changePage(pageNumber) {
+    // Obtén todos los elementos de la paginación
+    var pageItems = document.querySelectorAll('.page-item');
+
+    // Recorre cada página y elimina la clase 'active'
+    pageItems.forEach(function(item) {
+        item.classList.remove('active');
+    });
+
+    // Agrega la clase 'active' al número de página seleccionado
+    var activePage = document.querySelector('.page-link[href="#"]:contains("' + pageNumber + '")').parentElement;
+    activePage.classList.add('active');
+}
+
+</script>

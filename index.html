@@ -155,7 +155,7 @@
             <div class="row">
                 <!-- Noticia 1 -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="noticias.html" class="news-card">
+                    <a href="noticia.html" class="news-card">
                         <img src="IMG/NOTICIAS/as-populacoes-menos-poluentes-do-mundo-correm-um-risco-muito-maior-de-inundacoes-provocadas-pelas-alteracoes-climaticas-1731439429516_1024.webp" class="card-img-top" alt="Noticia 1">
                         <div class="news-card-body">
                             <p class="news-date">10 de Noviembre, 2024</p>
@@ -167,7 +167,7 @@
 
                 <!-- Noticia 2 -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="noticias.html" class="news-card">
+                    <a href="noticia.html" class="news-card">
                         <img src="IMG/NOTICIAS/un-paciente-con-sintomas-de-dengue-espera-ser-CMCSWV2W7RHG5LXFYA745ETZ5E.avif" class="card-img-top" alt="Noticia 2">
                         <div class="news-card-body">
                             <p class="news-date">9 de Noviembre, 2024</p>
@@ -179,7 +179,7 @@
 
                 <!-- Noticia 3 -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="noticias.html" class="news-card">
+                    <a href="noticia.html" class="news-card">
                         <img src="IMG/NOTICIAS/WKH7AGGZOUNTNDBPL6BV3EVNU4.avif" class="card-img-top" alt="Noticia 3">
                         <div class="news-card-body">
                             <p class="news-date">10 de Noviembre, 2024</p>
@@ -191,7 +191,7 @@
 
                 <!-- Noticia 4 -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="noticias.html" class="news-card">
+                    <a href="noticia.html" class="news-card">
                         <img src="IMG/NOTICIAS/5c740716-atanor_02-1024x576.jpg" class="card-img-top" alt="Noticia 4">
                         <div class="news-card-body">
                             <p class="news-date">11 de Noviembre, 2024</p>
@@ -201,6 +201,9 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="text-center mt-4">
+            <button onclick="noticias()" class="btn btn-primary ver-noticias">Ver todas las noticias</button>
         </div>
     </section>
 <!-- NOTICIAS -->
@@ -212,7 +215,7 @@
 
         <!-- Testimonio Juan Perez -->
         <div class="container cont-testimonio col-md-6 active" style="width: 40rem;">
-            <div class="testimonio d-flex p-2">
+            <div class="testimonio d-flex p-3">
                 <!-- Imagen a la derecha -->
                 <div class="mt-4">
                     <img src="IMG/TESTIMONIOS/juan-perez.webp" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
@@ -229,7 +232,7 @@
 
         <!-- Testimonio Maria Lopez -->
         <div class="container cont-testimonio col-md-6" style="height: rem; width: 40rem;">            
-            <div class="testimonio d-flex p-2">
+            <div class="testimonio d-flex p-3">
                 <!-- Imagen a la derecha -->
                 <div class="mt-4">
                     <img src="IMG/TESTIMONIOS/Maria-Lopez.webp" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
@@ -246,7 +249,7 @@
 
         <!-- Testimonio Carlos Rivera -->
         <div class="container cont-testimonio col-md-6" style="height: rem; width: 40rem;">            
-            <div class="testimonio d-flex p-2">
+            <div class="testimonio d-flex p-3">
                 <!-- Imagen a la derecha -->
                 <div class="mt-4">
                     <img src="IMG/TESTIMONIOS/CarlosRivera.jpg" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
@@ -263,7 +266,7 @@
 
         <!-- Testimonio Martin Muñoz -->
         <div class="container cont-testimonio col-md-6" style="height: rem; width: 40rem;">            
-            <div class="testimonio d-flex p-2">
+            <div class="testimonio d-flex p-3">
                 <!-- Imagen a la derecha -->
                 <div class="mt-4">
                     <img src="IMG/TESTIMONIOS/Martin-muñoz.jpeg" alt="Imagen Juan Perez" class="rounded-circle" style="width: 8rem; height: 8rem;">
@@ -315,35 +318,39 @@
 </html>
 
 <script>
-const testimonios = document.querySelectorAll('.cont-testimonio');
-let currentIndex = 0;
+    function noticias(){
+        window.location.href= "noticias.html";
+    }
 
-function fadeOut(element) {
-    element.style.transition = 'opacity 1s ease';  // Transición suave para opacidad
-    element.style.display = "none";
-    element.style.opacity = 0;
-}
+    const testimonios = document.querySelectorAll('.cont-testimonio');
+    let currentIndex = 0;
 
-function fadeIn(element) {
-    element.style.display = "block";
-    element.style.transition = 'opacity 1s ease';  // Transición suave para opacidad
-    element.style.opacity = 1;
-}
+    function fadeOut(element) {
+        element.style.transition = 'opacity 1s ease';  // Transición suave para opacidad
+        element.style.display = "none";
+        element.style.opacity = 0;
+    }
 
-function showTestimonial(index) {
-    fadeOut(testimonios[currentIndex]);
-    setTimeout(() => {
-        currentIndex = index;
-        fadeIn(testimonios[currentIndex]);
-    }, 250);  // Esperar que termine el desvanecimiento antes de cambiar
-}
+    function fadeIn(element) {
+        element.style.display = "block";
+        element.style.transition = 'opacity 1s ease';  // Transición suave para opacidad
+        element.style.opacity = 1;
+    }
 
-// Inicializar el primer testimonio como activo
-fadeIn(testimonios[currentIndex]);
+    function showTestimonial(index) {
+        fadeOut(testimonios[currentIndex]);
+        setTimeout(() => {
+            currentIndex = index;
+            fadeIn(testimonios[currentIndex]);
+        }, 250);  // Esperar que termine el desvanecimiento antes de cambiar
+    }
 
-// Mover automáticamente cada 5 segundos
-setInterval(() => {
-    const newIndex = (currentIndex < testimonios.length - 1) ? currentIndex + 1 : 0;
-    showTestimonial(newIndex);
-}, 5000);
+    // Inicializar el primer testimonio como activo
+    fadeIn(testimonios[currentIndex]);
+
+    // Mover automáticamente cada 5 segundos
+    setInterval(() => {
+        const newIndex = (currentIndex < testimonios.length - 1) ? currentIndex + 1 : 0;
+        showTestimonial(newIndex);
+    }, 5000);
 </script>
