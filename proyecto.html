@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Incluir SweetAlert -->
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/noticia.css">
+    <link rel="stylesheet" href="CSS/proyecto.css">
+    <script src="JS/app.js"></script>
+    <link rel="icon" type="image/x-icon" href="IMG/LOGO-4.png">
+    <title>PROYECTO</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#449f48;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="IMG/LOGO-4.png" alt="Logo" width="70" height="70" class="d-inline-block">
+            <div class="logo-container ms-2">
+                <span class="logo-text nav-link">Alianza Natural</span>
+            </div>
+        </a>
+        <!-- Botón de colapso para pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <!-- Menú de navegación que se colapsa -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto lista-nav">  <!-- ms-auto para alinear a la derecha -->
+                <li class="nav-item">
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;" aria-current="page" href="donar.html">Donar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2; border-bottom: 5px solid;" aria-current="page" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;" aria-current="page" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link me-4" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;;" aria-current="page" href="participar.html">Voluntariado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link me-2" style="font-family: 'Open Sans', sans-serif; color: #f2f2f2;;" aria-current="page" href="faq.html">Preguntas frecuentes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR -->
+
+
+<!-- Proyecto -->
+<div class="container text-center" style="background-color: #f1f1f1; height: 100%;">
+    <div class="row">
+        <!-- Columna de texto de la noticia -->
+        <div class="mt-5 mb-2">
+            <!-- Título de la noticia -->
+            <h2 class="noticia-titulo text-center d-block d-md-none" style="font-size: 1.6rem;">Energías Renovables para Comunidades Rurales</h2>
+            <h2 class="noticia-titulo text-center d-none d-md-block">Energías Renovables para Comunidades Rurales</h2>
+
+            <!-- Subtítulo -->
+            <h4 class="noticia-subtitulo d-block d-md-none" style="font-size: 1.4rem;">Transformando comunidades rurales con energía limpia.</h4>
+            <h4 class="noticia-subtitulo d-none d-md-block">Transformando comunidades rurales con energía limpia.</h4>
+
+            <!-- Carrusel de imágenes -->
+            <div id="carruselProyecto" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="IMG/PROYECTOS/proyecto-enren.jpg" class="img-fluid rounded" alt="Energía solar en comunidades rurales">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/PROYECTOS/proyecto-enren-2.jpg" class="img-fluid rounded" alt="Turbinas eólicas instaladas en zonas rurales">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/PROYECTOS/proyecto-enren-3.jpg" class="img-fluid rounded" alt="Instalación de paneles solares">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselProyecto" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselProyecto" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <!-- Desarrollo de la noticia -->
+            <p class="container px-1 noticia-desarrollo mt-4" style="text-align: justify; font-size: 1.5rem;">
+                Este proyecto busca mejorar la calidad de vida en comunidades rurales mediante la instalación de paneles solares y turbinas eólicas. Con estas tecnologías, las familias pueden acceder a electricidad limpia y sostenible, reduciendo la dependencia de combustibles fósiles y promoviendo un entorno más ecológico.
+            </p>
+
+            <p class="container px-1 noticia-desarrollo mt-4" style="text-align: justify; font-size: 1.5rem;">
+                Además de proporcionar energía, el proyecto fomenta el desarrollo local mediante la capacitación de las comunidades para el mantenimiento de los sistemas instalados. Esto asegura la sostenibilidad a largo plazo y genera oportunidades de empleo.
+            </p>
+
+            <p class="container px-1 noticia-desarrollo mt-4" style="text-align: justify; font-size: 1.5rem;">
+                El impacto positivo de estas iniciativas incluye la mejora de la educación, al permitir la iluminación de escuelas, y el fortalecimiento del acceso a la tecnología en regiones remotas, impulsando su desarrollo socioeconómico.
+            </p>
+
+            <!-- Información sobre los voluntarios -->
+            <div class="d-flex text-start mt-4">
+                <span class="redactor-nombre" style="font-size: 1.1rem;">Voluntarios: María López, Juan Perez, Ruben Azcuenaga, Municipalidad de calchin.</span>
+            </div>
+            <!-- Información sobre los donadores -->
+            <div class="d-flex text-start mt-4">
+                <span class="redactor-nombre" style="font-size: 1.1rem;">Donadores: Julian Martinez, 3 donadores anonimos.</span>            
+            </div>
+        </div>
+                <!-- Fecha -->
+            <p class="noticia-fecha d-flex mt-3" style="color: #5e5e5e;">15 de diciembre de 2024</p>
+    </div>
+</div>
+
+
+
+<!-- Botón back to top -->
+<button id="backToTop" class="btn btn-info" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000;" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up" style="color: black;"></i>
+</button>
+<!-- Botón back to top -->
+
+
+<!-- Footer -->
+<footer class="text-center"  style=" border-top: 1px solid gray; background-color: #449f48;">
+    <div class="container p-1 mt-2">
+        <!-- Section: Social media -->
+        <section>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998; border: transparent;" href="https://www.facebook.com/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;  border: transparent;" href="https://x.com/" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;  border: transparent;" href="https://www.instagram.com/" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center pt-1 pb-1" >
+        © 2024 Copyright:
+        <a class="text-dark" style="text-decoration: none;">IHC</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+.carousel-item img {
+    width: 100%;
+    height: 30rem; /* Ajusta este valor según el tamaño deseado */
+    object-fit: contain; /* Mantiene una buena proporción sin distorsionar la imagen */
+    border-radius: 10px; /* Opcional: para un diseño más atractivo */
+}
+
+/* Iconos personalizados para los controles del carrusel */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.boton-carr{
+    width: 15rem;
+    height: 4rem;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-item img {
+        width: 90%;
+        height: 20rem; /* Ajusta este valor según el tamaño deseado */
+        object-fit: contain; /* Mantiene una buena proporción sin distorsionar la imagen */
+        border-radius: 10px; /* Opcional: para un diseño más atractivo */
+    }
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem; 
+    }
+    .boton-carr{
+        width: 10rem;
+        height: 4rem;
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    .boton-carr{
+        width: 9rem;
+        height: 4rem;
+    }
+}
