@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Incluir SweetAlert -->
     <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/noticia.css">
     <link rel="stylesheet" href="CSS/proyecto.css">
     <script src="JS/app.js"></script>
     <link rel="icon" type="image/x-icon" href="IMG/LOGO-4.png">
@@ -55,10 +54,10 @@
 
 
 <!-- Proyecto -->
-<div class="container text-center" style="background-color: #f1f1f1; height: 100%;">
+<div class="container text-center" style="background-color: #f1f1f1;">
     <div class="row">
         <!-- Columna de texto de la noticia -->
-        <div class="mt-5 mb-2">
+        <div class="container mt-5 mb-2">
             <!-- Título de la noticia -->
             <h2 class="noticia-titulo text-center d-block d-md-none" style="font-size: 1.6rem;">Energías Renovables para Comunidades Rurales</h2>
             <h2 class="noticia-titulo text-center d-none d-md-block">Energías Renovables para Comunidades Rurales</h2>
@@ -90,16 +89,29 @@
                 </button>
             </div>
 
-            <!-- Desarrollo de la noticia -->
-            <p class="container px-1 noticia-desarrollo mt-4" style="text-align: justify; font-size: 1.5rem;">
+            <!-- Desarrollo de la noticia para dispositivos móviles -->
+            <p class="container px-1 noticia-desarrollo mt-4 d-block d-md-none" style="text-align: justify; font-size: 1.2rem;">
                 Este proyecto busca mejorar la calidad de vida en comunidades rurales mediante la instalación de paneles solares y turbinas eólicas. Con estas tecnologías, las familias pueden acceder a electricidad limpia y sostenible, reduciendo la dependencia de combustibles fósiles y promoviendo un entorno más ecológico.
             </p>
-
-            <p class="container px-1 noticia-desarrollo mt-4" style="text-align: justify; font-size: 1.5rem;">
+        
+            <p class="container px-1 noticia-desarrollo mt-4 d-block d-md-none" style="text-align: justify; font-size: 1.2rem;">
                 Además de proporcionar energía, el proyecto fomenta el desarrollo local mediante la capacitación de las comunidades para el mantenimiento de los sistemas instalados. Esto asegura la sostenibilidad a largo plazo y genera oportunidades de empleo.
             </p>
 
-            <p class="container px-1 noticia-desarrollo mt-4" style="text-align: justify; font-size: 1.5rem;">
+            <p class="container px-1 noticia-desarrollo mt-4 d-block d-md-none" style="text-align: justify; font-size: 1.2rem;">
+                El impacto positivo de estas iniciativas incluye la mejora de la educación, al permitir la iluminación de escuelas, y el fortalecimiento del acceso a la tecnología en regiones remotas, impulsando su desarrollo socioeconómico.
+            </p>
+        
+            <!-- Desarrollo de la noticia para dispositivos de escritorio -->
+            <p class="container px-5 noticia-desarrollo mt-4 d-none d-md-block" style="text-align: justify; font-size: 1.5rem;">
+                Este proyecto busca mejorar la calidad de vida en comunidades rurales mediante la instalación de paneles solares y turbinas eólicas. Con estas tecnologías, las familias pueden acceder a electricidad limpia y sostenible, reduciendo la dependencia de combustibles fósiles y promoviendo un entorno más ecológico.
+            </p>
+            
+            <p class="container px-5 noticia-desarrollo mt-4 d-none d-md-block" style="text-align: justify; font-size: 1.5rem;">
+                Además de proporcionar energía, el proyecto fomenta el desarrollo local mediante la capacitación de las comunidades para el mantenimiento de los sistemas instalados. Esto asegura la sostenibilidad a largo plazo y genera oportunidades de empleo.
+            </p>
+            
+            <p class="container px-5 noticia-desarrollo mt-4 d-none d-md-block" style="text-align: justify; font-size: 1.5rem;">
                 El impacto positivo de estas iniciativas incluye la mejora de la educación, al permitir la iluminación de escuelas, y el fortalecimiento del acceso a la tecnología en regiones remotas, impulsando su desarrollo socioeconómico.
             </p>
 
@@ -108,12 +120,12 @@
                 <span class="redactor-nombre" style="font-size: 1.1rem;">Voluntarios: María López, Juan Perez, Ruben Azcuenaga, Municipalidad de calchin.</span>
             </div>
             <!-- Información sobre los donadores -->
-            <div class="d-flex text-start mt-4">
+            <div class="d-flex text-start mt-3">
                 <span class="redactor-nombre" style="font-size: 1.1rem;">Donadores: Julian Martinez, 3 donadores anonimos.</span>            
             </div>
-        </div>
-                <!-- Fecha -->
+            <!-- Fecha -->
             <p class="noticia-fecha d-flex mt-3" style="color: #5e5e5e;">15 de diciembre de 2024</p>
+        </div>
     </div>
 </div>
 
@@ -125,9 +137,8 @@
 </button>
 <!-- Botón back to top -->
 
-
 <!-- Footer -->
-<footer class="text-center"  style=" border-top: 1px solid gray; background-color: #449f48;">
+<footer class="text-center" style=" border-top: 1px solid gray; background-color: #449f48;">
     <div class="container p-1 mt-2">
         <!-- Section: Social media -->
         <section>

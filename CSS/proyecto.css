@@ -54,6 +54,76 @@
 }
 
 
-footer {
+/* Estilos para la fecha */
+.noticia-fecha {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el título de la noticia */
+.noticia-titulo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #1a2530;
+    margin-bottom: 15px;
+
+}
+
+/* Estilos para el subtítulo */
+.noticia-subtitulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #626c6d;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el desarrollo de la noticia */
+.noticia-desarrollo {
+    font-size: 1.1rem;
+    color: #273644;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilos para el nombre del redactor */
+.redactor-nombre {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2980b9;
+}
+
+/* Estilos para la imagen del redactor */
+.img-thumbnail {
+    border: 2px solid #3498db;
+}
+
+/* BACK TO TOP */
+#backToTop {
+    border-radius: 90%;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border-color: black;
+}
+/* BACK TO TOP */
+
+/* Aseguramos que el body ocupe toda la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Ajusta el padding según sea necesario */
+}
+
+footer{
     margin-top: auto;
 }
